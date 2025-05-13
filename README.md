@@ -6,6 +6,14 @@ This project is a clone of the [Weglot website's landing page](https://www.weglo
 
 This is a practice project aimed at improving front-end development skills by recreating the Weglot landing page. Weglot is a website translation solution, and their landing page offers a great opportunity to practice modern web design techniques.
 
+## Screenshots
+
+### Original Inspiration
+![Original Weglot Website](inspo.png)
+
+### My Clone Implementation
+![My Weglot Clone](clone.png)
+
 ## Technologies Used
 
 - HTML5
@@ -15,9 +23,20 @@ This is a practice project aimed at improving front-end development skills by re
 ## Project Structure
 
 ```
-├── index.html     # Main HTML file
-├── style.scss     # SCSS source file
-└── style.css      # Compiled CSS file
+├── index.html           # Main HTML file
+├── style.scss           # Main SCSS file that imports partials
+├── style.css            # Compiled CSS file
+├── style.css.map        # Source map for debugging
+├── _variables.scss      # SCSS variables
+├── _navigation.scss     # Navigation styles
+├── _main.scss           # Main content styles
+├── _footer.scss         # Footer styles
+├── Weglot Logo.svg      # Logo image
+├── arrow.svg            # Arrow icon
+├── checkmark.webp       # Checkmark icon
+├── main.png             # Main hero image
+├── inspo.png            # Original website screenshot for reference
+└── clone.png            # Screenshot of the clone implementation
 ```
 
 ## Learning Objectives

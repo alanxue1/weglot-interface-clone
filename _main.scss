@@ -89,10 +89,10 @@ main{
         }
         
         .review-divider {
-            width: 1px; /* Decreased width of the divider */
+            width: 2px; 
             height: 40px;
-            background-color: #e0e0e0;
-            margin: 0 30px; /* Increased horizontal margin from 20px to 30px */
+            background-color: #bfbfbf;
+            margin: 0 30px; 
             align-self: flex-end;
         }
         
@@ -103,7 +103,8 @@ main{
         }
         
         .reviewer{
-            font-size: 15px; 
+            font-size: 19px; 
+            font-weight: 100;
             color: #4f4f4f;
         }
     }
