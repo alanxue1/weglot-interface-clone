@@ -154,10 +154,10 @@ main {
   gap: 4px;
 }
 .left-block .reviews .review-divider {
-  width: 1px; /* Decreased width of the divider */
+  width: 2px;
   height: 40px;
-  background-color: #e0e0e0;
-  margin: 0 30px; /* Increased horizontal margin from 20px to 30px */
+  background-color: #bfbfbf;
+  margin: 0 30px;
   align-self: flex-end;
 }
 .left-block .reviews .stars {
@@ -166,7 +166,8 @@ main {
   letter-spacing: 2px;
 }
 .left-block .reviews .reviewer {
-  font-size: 15px;
+  font-size: 19px;
+  font-weight: 100;
   color: #4f4f4f;
 }
 
@@ -177,15 +178,28 @@ main {
   width: 600px;
 }
 
+footer {
+  background-color: #18164c;
+  width: 100%;
+  height: 50px;
+  margin-top: auto; /* Use auto margin to push to bottom */
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.app {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: white;
-  height: 100vh;
 }/*# sourceMappingURL=style.css.map */

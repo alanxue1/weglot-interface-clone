@@ -9,9 +9,15 @@
     box-sizing: border-box;
   }
   
-  .app {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: white;
-    height: 100vh;
-  }
+}
