@@ -22,6 +22,7 @@
   padding: 8px;
   border-radius: 6px;
   font-weight: bold;
+  font-size: 15px;
   box-shadow: 5px 5px 0 #4739e0, 9px 9px 0 #f6ccff;
 }
 .nav .logo .language .arrow {
@@ -39,6 +40,7 @@
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+  font-size: 16px;
 }
 .nav .navigation div .arrow {
   width: 12px;
@@ -51,10 +53,12 @@
 }
 .nav .signup .contact {
   cursor: pointer;
+  font-size: 16px;
 }
 .nav .signup .login {
   cursor: pointer;
   font-weight: 900;
+  font-size: 16px;
 }
 .nav .signup .button {
   padding: 0.75rem 1rem;
@@ -63,20 +67,107 @@
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
+  font-size: 16px;
 }
 
 main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .left-block {
-  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 110px;
   margin-left: 150px;
 }
 .left-block .header {
-  font-weight: bold;
+  font-weight: 900;
   color: #18164c;
-  font-size: 70px;
+  font-size: 78px;
+  line-height: 0.9;
+}
+.left-block .paragraph {
+  color: rgb(75, 75, 75);
+  line-height: 1.6;
+  font-size: 18px;
+}
+.left-block .button {
+  padding: 20px;
+  background-color: #4739e0;
+  width: 240px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 19px;
+}
+.left-block .button:hover {
+  opacity: 90%;
+}
+.left-block .caption {
+  display: flex;
+  flex-direction: column;
+  color: rgb(75, 75, 75);
+  font-size: 15px;
+}
+.left-block .caption ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.left-block .caption ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.left-block .caption ul li::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("checkmark.webp") no-repeat center;
+  background-size: contain;
+}
+.left-block .reviews {
+  margin-top: 60px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.left-block .reviews .review-1, .left-block .reviews .review-2, .left-block .reviews .review-3 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 100px;
+}
+.left-block .reviews .review-1 .rating, .left-block .reviews .review-2 .rating, .left-block .reviews .review-3 .rating {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(75, 75, 75);
+}
+.left-block .reviews .review-1 .review-border, .left-block .reviews .review-2 .review-border, .left-block .reviews .review-3 .review-border {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.left-block .reviews .review-divider {
+  width: 1px; /* Decreased width of the divider */
+  height: 40px;
+  background-color: #e0e0e0;
+  margin: 0 30px; /* Increased horizontal margin from 20px to 30px */
+  align-self: flex-end;
+}
+.left-block .reviews .stars {
+  color: #f95b18;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.left-block .reviews .reviewer {
+  font-size: 15px;
+  color: #4f4f4f;
 }
 
 .right-block {

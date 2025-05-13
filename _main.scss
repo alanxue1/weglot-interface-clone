@@ -1,14 +1,111 @@
 main{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .left-block{
-    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-top: 110px;
     margin-left: 150px;
+
     .header{
-        font-weight: bold;
+        font-weight: 900;
         color:$bunting;
-        font-size: 70px;
+        font-size: 78px; 
+        line-height: 0.9;  
+    }
+    .paragraph{
+        color:rgb(75, 75, 75);
+        line-height: 1.6;
+        font-size: 18px; 
+    }
+    .button{
+        padding: 20px;
+        background-color: $royal-blue;
+        width: 240px;
+        color:white;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+        cursor:pointer;
+        font-size: 19px; 
+        
+        &:hover{
+            opacity: 90%;
+        }
+    }
+    .caption{
+        display: flex;
+        flex-direction: column;
+        color:rgb(75, 75, 75);
+        font-size: 15px;  
+
+        ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            
+            li {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background: url('checkmark.webp') no-repeat center;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+    .reviews{
+        margin-top: 60px;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        
+        .review-1, .review-2, .review-3{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-width: 100px;
+            
+            .rating{
+                font-size: 35px;
+                font-weight: bold;
+                color: rgb(75, 75, 75);
+            }
+            
+            .review-border{
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+        
+        .review-divider {
+            width: 1px; /* Decreased width of the divider */
+            height: 40px;
+            background-color: #e0e0e0;
+            margin: 0 30px; /* Increased horizontal margin from 20px to 30px */
+            align-self: flex-end;
+        }
+        
+        .stars{
+            color:$orange;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+        
+        .reviewer{
+            font-size: 15px; 
+            color: #4f4f4f;
+        }
     }
 }
 
@@ -16,6 +113,5 @@ main{
     margin-top: 130px;
     img{
         width: 600px;
-
     }
 }
