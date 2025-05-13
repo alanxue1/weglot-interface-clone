@@ -1,0 +1,100 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem;
+  color: #18164c;
+  border-bottom: 1px rgb(223, 223, 223) solid;
+}
+.nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.nav .logo .language {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 5px 5px 0 #4739e0, 9px 9px 0 #f6ccff;
+}
+.nav .logo .language .arrow {
+  width: 12px;
+  height: 12px;
+}
+.nav .navigation {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-left: -90px;
+}
+.nav .navigation div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.nav .navigation div .arrow {
+  width: 12px;
+  height: 12px;
+}
+.nav .signup {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav .signup .contact {
+  cursor: pointer;
+}
+.nav .signup .login {
+  cursor: pointer;
+  font-weight: 900;
+}
+.nav .signup .button {
+  padding: 0.75rem 1rem;
+  background-color: #4739e0;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+}
+
+.left-block {
+  margin-top: 90px;
+  margin-left: 150px;
+}
+.left-block .header {
+  font-weight: bold;
+  color: #18164c;
+  font-size: 70px;
+}
+
+.right-block {
+  margin-top: 130px;
+}
+.right-block img {
+  width: 600px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: white;
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */

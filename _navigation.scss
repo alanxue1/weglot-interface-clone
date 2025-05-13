@@ -1,0 +1,76 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+    color:$bunting;
+    border-bottom: 1px rgb(223, 223, 223) solid;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        .language {
+            margin-top: 7px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            border: 1px solid black;
+            padding: 8px;
+            border-radius: 6px;
+            font-weight: bold;
+
+            box-shadow: 5px 5px 0 $royal-blue, 9px 9px 0 $mauve;
+
+            .arrow {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+
+    .navigation {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-left:-90px;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+
+            .arrow {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+
+    .signup {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        .contact{
+            cursor: pointer;
+        }
+        .login{
+            cursor:pointer;
+            font-weight:900;
+        }
+
+        .button {
+            padding: 0.75rem 1rem;
+            background-color: $royal-blue;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+main{
+    display: flex;
+}
+
+.left-block{
+    margin-top: 90px;
+    margin-left: 150px;
+    .header{
+        font-weight: bold;
+        color:$bunting;
+        font-size: 70px;
+    }
+}
+
+.right-block{
+    margin-top: 130px;
+    img{
+        width: 600px;
+
+    }
+}

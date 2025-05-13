@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'navigation';
+@import 'main';
+@import 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .app {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: white;
+    height: 100vh;
+  }
