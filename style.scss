@@ -1,3 +1,15 @@
+/* Using Google Fonts for Inter and local Helvetica Now */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Local Helvetica Now Text font */
+@font-face {
+  font-family: 'Helvetica Now Text';
+  src: url('Helvetica Now Text Regular/HelveticaNowText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import 'variables';
 @import 'navigation';
 @import 'main';
@@ -13,6 +25,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Inter', sans-serif;
 }
 
 app {

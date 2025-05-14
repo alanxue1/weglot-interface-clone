@@ -1,3 +1,13 @@
+/* Using Google Fonts for Inter and local Helvetica Now */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+/* Local Helvetica Now Text font */
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("Helvetica Now Text Regular/HelveticaNowText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .nav {
   display: flex;
   flex-direction: row;
@@ -83,10 +93,14 @@ main {
   margin-left: 150px;
 }
 .left-block .header {
-  font-weight: 900;
+  font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+  font-weight: 900; /* Increased to maximum weight */
   color: #18164c;
   font-size: 78px;
-  line-height: 0.9;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-shadow: 0.2px 0 0 #18164c; /* Subtle text shadow to enhance boldness */
+  -webkit-text-stroke: 0.45px #18164c; /* For webkit browsers */
 }
 .left-block .paragraph {
   color: rgb(75, 75, 75);
@@ -195,6 +209,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: "Inter", sans-serif;
 }
 
 app {

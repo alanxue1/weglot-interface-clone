@@ -11,10 +11,14 @@ main{
     margin-left: 150px;
 
     .header{
-        font-weight: 900;
+        font-family: 'Helvetica Now Text', Helvetica, Arial, sans-serif;
+        font-weight: 900; /* Increased to maximum weight */
         color:$bunting;
         font-size: 78px; 
-        line-height: 0.9;  
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+        text-shadow: 0.2px 0 0 $bunting; /* Subtle text shadow to enhance boldness */
+        -webkit-text-stroke: 0.45px $bunting; /* For webkit browsers */
     }
     .paragraph{
         color:rgb(75, 75, 75);
