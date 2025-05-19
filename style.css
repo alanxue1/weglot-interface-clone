@@ -43,14 +43,14 @@
   display: flex;
   gap: 2rem;
   align-items: center;
-  margin-left: -90px;
+  margin-left: -60px;
 }
 .nav .navigation div {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 13px;
 }
 .nav .navigation div .arrow {
   width: 12px;
